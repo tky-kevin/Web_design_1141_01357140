@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        body {
+            background: url('ntou.jpg');
+            background-repeat: repeat-y;
+            font-size: 1.5em;
+            background-color: rgb(59, 138, 205);
+            color: white;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            background-color: lightblue;
+            color: navy;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .link {
+            width: 20px;
+            height: 20px;
+            position: relative;
+            top: 2px;
+        }
+
+        .logo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 100px;
+            height: 100px;
+            z-index: 10;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Websites</title>
+</head>
+
+<body>
+    <h1>Here are my favorite sites</h1>
+    <p>Click on a name to go to the website</p>
+    <ul>
+        <li><a href="https://www.google.com">
+            <img src="link.png" class="link">Google</a></li>
+        <li><a href="https://www.facebook.com">
+            <img src="link.png" class="link">Facebook</a></li>
+        <li><a href="https://www.youtube.com">
+            <img src="link.png" class="link">Youtube</a></li>
+    </ul>
+    <img src="ntou_logo.png" alt="NTOU Logo" class="logo">
+</body>
+
+</html>

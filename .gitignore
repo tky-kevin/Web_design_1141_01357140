@@ -1,0 +1,8 @@
+*.docx
+*.doc
+*.pdf
+*.zip
+*.rar
+examples/
+.venv/
+test/

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
+
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        
+        .scrollable-box {
+            font-family: 'cwTeXFangSong', 'Microsoft JhengHei', '微軟正黑體', serif;
+            font-size: 24px;
+            text-align: justify;
+            width: 100%;
+            height: 130px;
+            border: 1px solid cornflowerblue;
+            padding: 3px;
+            box-sizing: border-box;
+            overflow-y: auto; 
+            overflow-x: hidden; 
+        }
+
+        .scrollable-box::first-letter {
+            float: left;
+            font-size: 220%;
+            margin-right: 4px;
+            margin-top: 7px;
+        }
+
+        .logo {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            width: 100px;
+            z-index: -1;
+        }
+
+        @media screen and (max-width: 600px) {
+            .scrollable-box {
+                width: 100%;
+                height: auto;
+                overflow: visible;
+            }
+            
+            .container {
+                display: grid;
+                grid-template-columns: auto;
+            }
+            
+            .logo {
+                width: 200px;
+                right: 10px;
+                bottom: 10px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img class="logo" src="ntou_logo.png">
+    <div class="container">
+        <div class="scrollable-box">人工神經網路（Artificial Neural Network，縮寫 ANN），簡稱神經網路（Neural Network，縮寫
+            NN）或類神經網路，是一種模仿生物神經網路(動物的中樞神經系統，特別是大腦)的結構和
+            功能的數學模型或計算模型，用於對函式進行估計或近似。神經網路由大量的人工神經元聯
+            結進行計算。大多數情況下人工神經網路能在外界資訊的基礎上改變內部結構，是一種自適
+            應系統。</div>
+        <div class="scrollable-box">
+            馬可夫鏈（Markov chain），因俄國數學家安德烈·馬可夫（俄語：Андрей Андреевйч Марков）
+            得名，為狀態空間中經過從一個狀態到另一個狀態的轉換的隨機過程。該過程要求具備「無
+            記憶」的性質：下一狀態的機率分布只能由當前狀態決定，在時間序列中它前面的事件均與
+            之無關。</div>
+        <div class="scrollable-box">蒙地卡羅方法（Monte Carlo method），也稱統計模擬方法。方法可以粗略地分成兩類：一類是
+            所求解的問題本身具有內在的隨機性，藉助電腦的運算能力可以直接模擬這種隨機的過程。
+            例如在核物理研究中，分析中子在反應爐中的傳輸過程。另一種類型是所求解問題可以轉化
+            為某種隨機分布的特徵數，比如隨機事件出現的機率，或者隨機變數的期望值。通過隨機抽
+            樣的方法，以隨機事件出現的頻率估計其機率，或者以抽樣的數字特徵估算隨機變數的數字
+            特徵，並將其作為問題的解。</div>
+        <div class="scrollable-box">生成式人工智慧（Generative Artificial Intelligence，簡稱 Generative AI 或生成式 AI）是能根據提
+            示（Prompt）自動生成文字、圖像、音訊、影片甚至三維內容的智慧系統。自 2020 年代中
+            期以來，隨著大型多模態模型（如 ChatGPT、Gemini、Claude、LLaMA）與影像生成系統（如
+            Stable Diffusion、Midjourney、DALL·E、Adobe Firefly）的快速發展，生成式 AI 不僅能理解並回
+            應自然語言，還能跨越語言、視覺與聲音等不同媒介，並透過整合工具與代理能力（AI agents）
+            展現更高的自動化與創造性，成為推動教育、設計、娛樂與產業創新的核心技術。</div>
+    </div>
+</body>
+
+</html>
