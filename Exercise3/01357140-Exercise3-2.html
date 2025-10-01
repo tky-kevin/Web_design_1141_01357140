@@ -10,21 +10,22 @@
 
         body {
             font-family: 'Perpetua';
+            margin: 0%;
         }
 
         .container {
             display: flex;
-            justify-content: space-around;
             flex-wrap: nowrap;
             background-color: royalblue;
         }
 
         nav {
+            width: calc(100vw / 6);
             font-weight: bold;
             color: white;
             border: 2px solid RoyalBlue;
             text-align: center;
-            width: 10em;
+            box-sizing: border-box;
         }
 
         nav ul {
@@ -36,6 +37,7 @@
         }
 
         nav:hover ul {
+            width: calc(100vw / 6); 
             display: block;
             position: absolute;
             z-index: 1;
@@ -44,8 +46,6 @@
         nav ul li {
             border-top: 2px solid RoyalBlue;
             background-color: white;
-            width: 10em;
-            color: black;
         }
 
         nav ul li:hover {
@@ -68,16 +68,11 @@
             }
 
             nav:hover ul {
+                width: 100%;
                 display: block;
                 position: relative;
                 z-index: 1;
             }
-
-            nav ul li {
-                width: 100%;
-            }
-            
-
         }
     </style>
     <meta charset="UTF-8">
@@ -86,7 +81,7 @@
 </head>
 
 <body>
-    <h1>Web Intelligence</h1>
+    <header><h1>Web Intelligence</h1></header>
     <div class="container">
         <nav>JavaScript
             <ul>

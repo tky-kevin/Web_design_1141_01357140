@@ -6,3 +6,4 @@
 examples/
 .venv/
 test/
+*.txt
